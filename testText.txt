@@ -1,11 +1,11 @@
 var p3 = new Promise( function(resolve,reject){
-resolve( "B" );
+resolve( "D" );
 } );
 var p1 = new Promise( function(resolve,reject){
 resolve( p3 );
 } );
 var p2 = new Promise( function(resolve,reject){
-resolve( "A" );
+resolve( "C" );
 } );
 p1.then( function(v){
 console.log( v );
